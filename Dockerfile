@@ -24,7 +24,6 @@ RUN buildDeps=" \
 	&& docker-php-ext-install ldap \
 	&& docker-php-ext-install mbstring \
 	&& docker-php-ext-install mcrypt \
-	&& docker-php-ext-install mysql \
 	&& docker-php-ext-install mysqli \
 	&& docker-php-ext-install pdo_mysql \
 	&& docker-php-ext-install zip \
