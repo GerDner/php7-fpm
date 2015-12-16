@@ -41,7 +41,7 @@ RUN cat /usr/src/php/php.ini-production | sed 's/^;\(date.timezone.*\)/\1 \"Etc\
 # Disable cgi.fix_pathinfo in php.ini
 RUN sed -i 's/;\(cgi\.fix_pathinfo=\)1/\10/' /usr/local/etc/php/php.ini
 
-RUN adduser --system --no-create-home --user-group --disabled-login --disabled-password nginx
+RUN adduser --system --no-create-home --disabled-login --disabled-password nginx
 
 COPY php-fpm.conf /usr/local/etc/
 
