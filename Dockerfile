@@ -45,6 +45,6 @@ RUN adduser --system --no-create-home --disabled-login --disabled-password nginx
 
 COPY php-fpm.conf /usr/local/etc/
 
-RUN usermod -u 104 nginx && groupmod -g 107 nginx
+RUN usermod -u 1200 nginx && groupmod -g 1300 nginx
 
 WORKDIR /usr/share/nginx/html
